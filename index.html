@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskHub Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <form id="contactForm">
+
+      <h1>Contact Form</h1>
+
+      <!-- Full Name -->
+      <div class="input-group">
+
+        <label>Full Name</label>
+
+        <div class="input-box">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+          >
+          <span class="icon" id="nameIcon"></span>
+        </div>
+
+        <small class="error"></small>
+
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+
+        <label>Email Address</label>
+
+        <div class="input-box">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+          >
+          <span class="icon" id="emailIcon"></span>
+        </div>
+
+        <small class="error"></small>
+
+      </div>
+
+      <!-- Phone -->
+      <div class="input-group">
+
+        <label>Phone Number</label>
+
+        <div class="input-box">
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+          >
+          <span class="icon" id="phoneIcon"></span>
+        </div>
+
+        <small class="error"></small>
+
+      </div>
+
+      <!-- Message -->
+      <div class="input-group">
+
+        <label>Message</label>
+
+        <div class="input-box">
+          <textarea
+            id="message"
+            placeholder="Enter your message"
+          ></textarea>
+
+          <span class="icon textarea-icon" id="messageIcon"></span>
+        </div>
+
+        <small class="error"></small>
+
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

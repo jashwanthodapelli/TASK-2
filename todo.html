@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+  <div class="todo-container">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+
+      <h1>Welcome to To-Do App</h1>
+
+      <p>
+        Manage your tasks efficiently and get in touch with us.
+        A complete productivity solution.
+      </p>
+
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+
+      <button class="back-btn" onclick="goBack()">
+        ← Back
+      </button>
+
+      <h2>📋 My Tasks</h2>
+
+    </div>
+
+    <!-- Notification Message -->
+    <div id="notification"></div>
+
+    <!-- Stats Cards -->
+    <div class="stats-container">
+
+      <div class="card">
+        <h3 id="totalTasks">0</h3>
+        <p>Total Tasks</p>
+      </div>
+
+      <div class="card">
+        <h3 id="completedTasks">0</h3>
+        <p>Completed</p>
+      </div>
+
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="What needs to be done?"
+      >
+
+      <button onclick="addTask()">Add Task</button>
+
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
